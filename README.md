@@ -47,7 +47,7 @@ header = ver | alg | key_id(16B) | key_ver(4B) | wrap | dek_wrap(40B) | ctx_hash
 
 The whole 95-byte header is part of the AAD. Changing the algorithm byte, the key version or the
 context breaks decryption rather than downgrading it. The format is specified byte for byte in
-[docs/envelope-v1.md](https://github.com/threshbyte/kms/blob/dev/java/docs/envelope-v1.md) and ships with conformance vectors, so an implementation
+[docs/envelope-v1.md](docs/envelope-v1.md) and ships with conformance vectors, so an implementation
 in another language can interoperate.
 
 ## Modules
@@ -133,8 +133,8 @@ Honest boundaries, because a key service that overstates itself is worse than no
 
 ## Documentation
 
-- [docs/envelope-v1.md](https://github.com/threshbyte/kms/blob/dev/java/docs/envelope-v1.md) — the ciphertext format, byte level
-- [docs/conventions.md](https://github.com/threshbyte/kms/blob/dev/java/docs/conventions.md) — serialization policy, dependency policy, naming rules
+- [docs/envelope-v1.md](docs/envelope-v1.md) — the ciphertext format, byte level
+- [docs/conventions.md](docs/conventions.md) — serialization policy, dependency policy, naming rules
 
 ## Status
 

@@ -1,0 +1,262 @@
+{
+  "spec": "kms1",
+  "version": 1,
+  "generated_by": "com.thresh.kmslab.envelope.VectorGenerator",
+  "positive": [
+    {
+      "name": "basic_ascii",
+      "key_id": "11111111-2222-3333-4444-555555555555",
+      "key_ver": 1,
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "dek_hex": "101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f",
+      "nonce_hex": "808182838485868788898a8b",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "plaintext_utf8": "13800138000",
+      "plaintext_hex": "3133383030313338303030",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p"
+    },
+    {
+      "name": "empty_plaintext",
+      "key_id": "11111111-2222-3333-4444-555555555555",
+      "key_ver": 1,
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "dek_hex": "202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+      "nonce_hex": "909192939495969798999a9b",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10087"},
+      "plaintext_utf8": "",
+      "plaintext_hex": "",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEE-KPDwwLTsLfpSxTc-FrR2mnNdAVu15B9PLSfsneZpBBNsFjykBrb9xVFYGXHcIARDXbUof299x8n2LVDtZkrPqY2lnD8FBc.kJGSk5SVlpeYmZqbQGsimibXgQArHNQGL96FKQ"
+    },
+    {
+      "name": "block_boundary_16",
+      "key_id": "11111111-2222-3333-4444-555555555555",
+      "key_ver": 1,
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "dek_hex": "303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f",
+      "nonce_hex": "a0a1a2a3a4a5a6a7a8a9aaab",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10088"},
+      "plaintext_utf8": "AAAAAAAAAAAAAAAA",
+      "plaintext_hex": "41414141414141414141414141414141",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQG3inMBcan7Gtz_XlERJP1i1ZiFjhLFX8K7VpuJmElvl7BzE13Ur9cao9eNAxYu_7GtPBRlytAifYKexrVMYFLhaGr9W2gmk4M.oKGio6SlpqeoqaqrYXGvCTWn4NKBkIt054M2f4KeD4eipPyQqgad_oLP_b0"
+    },
+    {
+      "name": "utf8_non_ascii",
+      "key_id": "11111111-2222-3333-4444-555555555555",
+      "key_ver": 2,
+      "kek_hex": "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f",
+      "dek_hex": "404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f",
+      "nonce_hex": "b0b1b2b3b4b5b6b7b8b9babb",
+      "ctx": {"tenant": "retail", "table": "member", "column": "name", "row_pk": "10089"},
+      "plaintext_utf8": "Zoë Ångström ✓ 13800138000",
+      "plaintext_hex": "5a6fc3ab20c3856e67737472c3b66d20e29c93203133383030313338303030",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAgHK8cqtQ0-d49v-Lq9iunBcOUUb-U7mgKnCiGZROPIKO4U9ZB3-LWd0c3pgZKHjYXTGlZve9lXZ_dVVh569hbV0hFoImRNEqrc.sLGys7S1tre4ubq7k8CoSzIOkuZAKzocCa8UdVeY1RxcnKRemxL4v9ynKJcTOhSW2XvYTKN_wwoCVAc"
+    },
+    {
+      "name": "ctx_sort_order",
+      "key_id": "11111111-2222-3333-4444-555555555555",
+      "key_ver": 1,
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "dek_hex": "505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f",
+      "nonce_hex": "c0c1c2c3c4c5c6c7c8c9cacb",
+      "ctx": {"z": "last", "a": "first", "m": "middle"},
+      "plaintext_utf8": "sort",
+      "plaintext_hex": "736f7274",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQH1qDgP2zwaqq6BaBMQRaRVURZRD2pki-8QijpXSJ0xKS_Gikp6gZF4hRAAeILhk2pH3ttiUodqtCjL0_AdCG8YpspzaMf1xrs.wMHCw8TFxsfIycrL52yNtqfdzZ9w1JTbgMYew8uWdHw"
+    },
+    {
+      "name": "keyver_zero",
+      "key_id": "11111111-2222-3333-4444-555555555555",
+      "key_ver": 0,
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "dek_hex": "606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f",
+      "nonce_hex": "d0d1d2d3d4d5d6d7d8d9dadb",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10090"},
+      "plaintext_utf8": "v0",
+      "plaintext_hex": "7630",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAAGjytGkRsJQ1RfovsPq3asaVc37XoaV6XcHoUKdNfqg-FybIeAU80w7ocy5bDT-CASeInR51dnWUZHPLA-DWvd253FCHn8VpcA.0NHS09TV1tfY2drb1loxwlpBrhxtfFFQJSnrM1Po"
+    },
+    {
+      "name": "keyver_u32max",
+      "key_id": "11111111-2222-3333-4444-555555555555",
+      "key_ver": 4294967295,
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "dek_hex": "707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f",
+      "nonce_hex": "e0e1e2e3e4e5e6e7e8e9eaeb",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10091"},
+      "plaintext_utf8": "vmax",
+      "plaintext_hex": "766d6178",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVV_____wFklCOE09D5zo2_JnWq3YAns0g2f6wsW0u1bMUJnu4pC050XY76FS6gTN3Qym788Hp-4tbIgeRNQF0R19HyVBtxs1MJ8li2OSA.4OHi4-Tl5ufo6errRMvJMYyleNRL7a6CydP7C1P5Ee8"
+    },
+    {
+      "name": "keyid_allzero",
+      "key_id": "00000000-0000-0000-0000-000000000000",
+      "key_ver": 1,
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "dek_hex": "1112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f30",
+      "nonce_hex": "f0f1f2f3f4f5f6f7f8f9fafb",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10092"},
+      "plaintext_utf8": "zero-id",
+      "plaintext_hex": "7a65726f2d6964",
+      "envelope": "kms1.AQEAAAAAAAAAAAAAAAAAAAAAAAAAAQEnWGbG84gZOYY93m6PIfVlSjbD_1zGroD2RvnHBsYtJp2CDVMHjumHaYx9V8Lz2j3O2cUKt2WRZ1wbn8xjD1gsxELiIBZ-8PQ.8PHy8_T19vf4-fr7QErAIDnXcSEYR37nv0Gww8z24UQraTw"
+    },
+    {
+      "name": "keyid_allff",
+      "key_id": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+      "key_ver": 1,
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "dek_hex": "2122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f40",
+      "nonce_hex": "0102030405060708090a0b0c",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10093"},
+      "plaintext_utf8": "max-id",
+      "plaintext_hex": "6d61782d6964",
+      "envelope": "kms1.AQH_____________________AAAAAQG3w5DFO3hgXJnNr24IdZOqjm0AO07U6jiL_Ff8F0Boo5wmIRABS9LbpEC8O6izrmAkygwktbeIbxQQiuVeGlpkNTgk_xmTLnc.AQIDBAUGBwgJCgsMHHGRhyWYiFDC3XnAa2HGE5JWZMV_pQ"
+    },
+    {
+      "name": "long_1k",
+      "key_id": "11111111-2222-3333-4444-555555555555",
+      "key_ver": 1,
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "dek_hex": "3132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f50",
+      "nonce_hex": "02030405060708090a0b0c0d",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10094"},
+      "plaintext_utf8": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghij",
+      "plaintext_hex": "6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a6b6c6d6e6f707172737475767778797a6162636465666768696a",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQFojSNB8QJcJVuwMUW7frs_eIWG7sX5aWyuCG7BrPJNHrHBUvn3Xz69JDSjh4Mmxev1TTt7gsBDXfOdzsNwc8npbgyTX0412V0.AgMEBQYHCAkKCwwNwC0eTfGqElZyqPPNpuxiSnSohQrM72rArGe2C0l8590-qd7mS4Aich23baqz6eY--YJo53Bayl_MFVbPyhZWAC7K3VXlPr6Jt96C0bChTGmzSSrk3HEg4PvHAn6ljMYT75iOGKjY7NASCQSaVQlS430wk6sEYbA5t1J10psx2Kxz4XX-pRDKkKqVmm1SWqvzHISdv0zFSwYDCK0oQ4JTs1DTFO7AGvzMDGgUaXlaI_xC1ZN2knqiI926W8W8s8JjKUPZbTqyscX7foXBRQU-sP6WBVDEIU0QSHbdU2WP4ugtQv-K9SjboMF_NuRIAuQJpdOdVi9RkG8Ki266ejSA3zS6-4MrSpMk79LptOj_5xsv3qS9Z9shwe3QRXb5vGNa4PS2PYOkrRUcHd83Xnvhw6E56dAkLMhQYFFIs9Gywr5nZ2hwqJ_n2ubG7tCBYjXR1FDditnl8oje9QLDBrODef5udweCmDr7txWIB04vPAjqJxRNSaQgarqJTWw5xS2rSnlAmfK6BAOn-RYlpwmMUa_eoBbaDh1f2wtehYCQVcon_nCJLP0PtopnfOjvgJqwYz26tYxwDZpuwhIrTGfUaBUtKEt6fz0Zx3bG9UDt3gyatdv3LuI98AT4XhVhUFmbIMrClNzeYdMShCoLNhmA1qw3fNCb6AF5xcpFVgZlZnxcEvedo_tM6PhH-Ygn6UigltVEkfZ-MsmCyfR3BriQi02s8BHOpkVcPSlK6WP7B4HjKbd1z9iYcZvBdFasl6MsYmAof4rghhMtWLZd-kSJjB6wh5wMnPhJNJcQL14c4dTrWz5befpy0Qg_R_VLc8t4aA3rhGVAj6Xd80EfuAHG6Fl87wt2L-3tbgN63Bg64jUB60H04yjsXzPnDJwpR7Ccfw_QRdZWSMVtWhszV-yP9TNxly0B2NktRAq6qqtwfYtLrkU-jIODtnQSAGbI18xpgA2zAJqCQwapcvAo92CFxj-5xiLcW0maJfWQ2WY_xOgFiBqr74CYQLt574baiJOFMmVg-6U4UCq0m_HBQUczhXRd8L_ZeTvEZM_QYmJJ0FBCcNy0j33_t5vLB-3YuZIph_4UQAYyjuEKerRN4Umv67C3UwAl9mj8_0PiXkno-BR7POh4R4itUpXJrUjhAFfDCU47kY8frZ5nU37HPqOWroFSG5dDtit1lWbBJBvMMIbtXzDmIB95l9RJCCRsK98fWEnAQIGLGrQwV69xxmek6JqFMweWvSH2DSLlmhL4o63dEutMEgKCFtgAKh9kTk_WY1M5r7Oc6fuOLsPTxG1YskqrBUEqAN3O1__Ea4M5PRHrCD4kZvHle9fN8SpPRIPXY-xu28D6LeczO9V5UmLwJfq7QtL5W0Ey1mAkbtoa2UA"
+    }
+  ],
+  "negative": [
+    {
+      "name": "tamper_tag",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-o",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "AUTH"
+    },
+    {
+      "name": "tamper_ciphertext",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9xwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "AUTH"
+    },
+    {
+      "name": "tamper_nonce",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gYGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "AUTH"
+    },
+    {
+      "name": "tamper_key_version",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAAEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "AUTH"
+    },
+    {
+      "name": "unsupported_alg",
+      "envelope": "kms1.AQMRERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "UNSUPPORTED"
+    },
+    {
+      "name": "unsupported_version",
+      "envelope": "kms1.AgERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "UNSUPPORTED"
+    },
+    {
+      "name": "unsupported_wrap",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQIMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "UNSUPPORTED"
+    },
+    {
+      "name": "truncated_tag",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu8",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "AUTH"
+    },
+    {
+      "name": "appended_byte",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-pAA",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "AUTH"
+    },
+    {
+      "name": "short_header",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HPw.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "FORMAT"
+    },
+    {
+      "name": "padding_char",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p=",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "FORMAT"
+    },
+    {
+      "name": "wrong_prefix",
+      "envelope": "kms2.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "FORMAT"
+    },
+    {
+      "name": "missing_segment",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "FORMAT"
+    },
+    {
+      "name": "extra_segment",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p.AAAA",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "FORMAT"
+    },
+    {
+      "name": "standard_base64_chars",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk/ntxuOc6WqSA6kyW0Kx4ro+lgVey+HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w+/nu+p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "FORMAT"
+    },
+    {
+      "name": "moved_to_other_row",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "20000"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "CONTEXT_MISMATCH"
+    },
+    {
+      "name": "ctx_missing_key",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "row_pk": "10086"},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "CONTEXT_MISMATCH"
+    },
+    {
+      "name": "ctx_empty",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {},
+      "kek_hex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+      "expect": "FORMAT"
+    },
+    {
+      "name": "wrong_kek",
+      "envelope": "kms1.AQERERERIiIzM0REVVVVVVVVAAAAAQEMo365w2qozMI9wp0i7HnGkk_ntxuOc6WqSA6kyW0Kx4ro-lgVey-HjwgwkQWNseDg7mN1SPMZTa78jEOuqislH6K8CL7HP3c.gIGCg4SFhoeIiYqL9hwwtzPs70DUlXLQPpJHcCIKJ6sy1w-_nu-p",
+      "ctx": {"tenant": "pay", "table": "user", "column": "phone", "row_pk": "10086"},
+      "kek_hex": "999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8",
+      "expect": "AUTH"
+    }
+  ]
+}

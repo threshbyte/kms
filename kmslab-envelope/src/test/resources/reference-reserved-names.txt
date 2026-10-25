@@ -1,0 +1,44 @@
+# Type names that appear in the two reference KMS SDK documents (KMS SDK.md and the 2.0.3
+# decryption analysis). The kmslab project must not reuse any of them: a reader comparing the
+# two code bases should never have to wonder whether two identically named classes mean the
+# same thing.
+#
+# Provenance: the package tree in KMS SDK.md (api/, core/, util/, exception/) plus the class
+# names referenced in the source analysis. Field names (TokenMap, DbTokenMapV2, ...) are not
+# included because they are not types.
+Kms
+KmsConf
+KmsContext
+KmsSecurity
+KmsSecurityBuilder
+KmsDataKey
+KmsDataKeyHolder
+KmsCipher
+KmsCryException
+KmsSignUtil
+KmsMaskingUtil
+KmsAdminAPI
+KmsFallback
+KmsConfiguration
+KMSLog
+MetaConfig
+AESCipher
+DESCipher
+RSACipher
+HMACCipher
+SignFunction
+RSAKeyPair
+SaltFeeder
+TimeFeeder
+Assert
+SignTypeEnum
+RSASignTypeEnum
+SymmetricEncryptTypeEnum
+TimeUnitEnum
+BusinessTypeEnum
+Hex
+DigestUtils
+Charsets
+DbDataKey
+DbHashDataKey
+TransferDataKey
