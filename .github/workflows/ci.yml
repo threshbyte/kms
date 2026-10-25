@@ -1,3 +1,4 @@
+# CI workflow for KMSLab — runs on every branch push and pull request.
 name: CI
 
 on:
