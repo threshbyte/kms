@@ -1,0 +1,60 @@
+# Build output
+target/
+build/
+out/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+
+# Test sources are kept local and are not published. Test resources (the kms1 conformance
+# vectors) stay in the repository: docs/envelope-v1.md points at them and tools/envelope_check.mjs
+# reads them, so shipping the spec without them would ship a broken reference.
+**/src/test/java/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs and crash dumps
+*.log
+*.hprof
+hs_err_pid*
+replay_pid*
+
+# Runtime state. The journal holds wrapped key material and the audit chain; it is data, not
+# source, and must never travel with the repository.
+data/
+journal.jsonl
+journal.jsonl.*
+
+# Key material and local secrets. This project generates and stores keys, so the ignore list is
+# deliberately aggressive: a committed test key is still a committed key.
+*.jks
+*.p12
+*.pfx
+*.pem
+*.key
+*.crt
+*.csr
+.env
+.env.*
+!*.env.example
+
+# Editor and OS noise
+*~
+*.swp
+*.swo
