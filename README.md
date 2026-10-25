@@ -1,5 +1,7 @@
 # KMSLab
 
+**English** | [简体中文](README.zh-CN.md)
+
 A self-hosted key management service for teams that need to encrypt sensitive database fields and
 hold their own keys.
 
